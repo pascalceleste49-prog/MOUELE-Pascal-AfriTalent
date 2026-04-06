@@ -4,11 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarifs AfriTalent</title>
+    <!-- Lien Bootstrap 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Lien CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <!-- Contenu de la page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">AfriTalent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="freelances.html">Freelance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tarifs.html">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 id="title_tarifs">Voici nos différentes offres</h1>
+    <!-- attribut class="card" pour spécifier qu'il s'agit d'une carte Bootstrap 5 -->
+    <div id="container_tarifs">
+        <!-- AfriTalent Gratuit -->
+        <div class="card" id="card1">
+            <div class="card-body">
+                <h2>Gratuit</h2>
+                <ul>
+                    <li>
+                        Création de profil
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Accès aux offres de projets
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Canditatures illimitées
+                        <i class="bi bi-x-circle"></i>
+                    </li> 
+                    <li>
+                        Accès à des projets premium
+                        <i class="bi bi-x-circle"></i>
+                    </li>
+                    <li>
+                        Faible rentabilité
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- AfriTalent Pro -->
+        <div class="card" id="card2">
+            <div class="card-body">
+                <h2>Pro (8.000FCFA/mois)</h2>
+                <ul>
+                    <li>
+                        Profil mis en avant
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Accès aux offres de projets
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Canditatures illimitées
+                        <i class="bi bi-check-circle"></i>
+                    </li> 
+                    <li>
+                        Accès à des projets premium
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Forte rentabilité
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- AfriTalent Entreprise -->
+        <div class="card" id="card3">
+            <div class="card-body">
+                <h2>Entreprise (12.000FCFA/mois)</h2>
+                <ul>
+                    <li>
+                        Messagerie avec plusieurs freelances
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Accès à une base de freelances filtrée
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Publications illimitées de projets
+                        <i class="bi bi-check-circle"></i>
+                    </li> 
+                    <li>
+                        Système de "Ajout au favori"
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                    <li>
+                        Tableau de gestion des projets
+                        <i class="bi bi-check-circle"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap 5 via CDN: script JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

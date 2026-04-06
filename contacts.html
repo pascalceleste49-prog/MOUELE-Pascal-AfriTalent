@@ -3,13 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Contacts - AfriTalent</title>
+    <!-- Lien Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Lien CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <!-- Contenu de la page -->
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">AfriTalent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="freelances.html">Freelance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tarifs.html">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container_contacts">
+        <form action="" method="">
+            <div>
+                <label for="">Nom</label>
+                <input type="text" class="space">
+            </div>
+            <div>
+                <label for="">Prénom</label>
+                <input type="text" class="space">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" class="space">
+            </div>
+            <div>
+                <label for="">Sujet</label>
+                <select name="sujet" id="sujet" class="space">
+                    <option value="default">Choisir une option</option>
+                    <option value="Freelance">Freelance</option>
+                    <option value="Entreprise">Entreprise</option>
+                </select>
+            </div>
+            <div> 
+                <label for="">Message</label>
+                <input type="text">
+            </div>
+            <div>
+                <input type="submit" value="Envoyer" id="envoyer">
+                <button type="reset">Annuler</button>
+            </div>
+        </form>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.6954448465397!2d-17.467871930515987!3d14.724925996170702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172b27c203d1b%3A0xdafc9289a7f6ce5c!2s8890%20Rue%20SC%2017%2C%20Dakar!5e0!3m2!1sfr!2ssn!4v1775469042877!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- Bootstrap 5 via CDN: script JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     

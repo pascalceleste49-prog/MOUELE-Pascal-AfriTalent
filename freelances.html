@@ -4,11 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelance AfriTalent</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Lien Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Lien CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <!-- Contenu de la page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">AfriTalent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="freelances.html">Freelance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tarifs.html">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- filtrage par catégories réalisé en JS -->
+    <ul>
+        <li>
+            <!-- Attribut class="card" pour spécifier que c'est une card Bootstrap 5 -->
+            <div class="card">
+                <!-- class="card-body" pour spécifier le corps de la carte Bootstrap 5 -->
+                <div class="card-body">
+                    <img src="images/Pascal Céleste.png" alt="Image de personnage fictif du projet">
+                    <h2>Pascal Céleste</h2>
+                    <h3>Développeur Web</h3>
+                    <h3>5.000FCFA/h</h3>
+                    <p>Développeur web depuis 5 ans disponible pour tous projets en rapport avec le web</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Keisha Mouele.png" alt="Image de personnage fictif du projet">
+                    <h2>Keisha Mouele</h2>
+                    <h3>Développeur Full Stack</h3>
+                    <h3>10.000FCFA/h</h3>
+                    <p>Développeur full stack depuis 7 ans disponible pour tous projets en rapport avec le numérique</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Christelle Mouithyss.png" alt="Image de personnage fictif du projet">
+                    <h2>Christelle Mouithyss</h2>
+                    <h3>Marketing digital</h3>
+                    <h3>7.000FCFA/h</h3>
+                    <p>Spécialiste du marketing digital depuis 4 ans disponible pour tous projets en rapport avec le Community management</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Emmanuel Josiah.png" alt="Image de personnage fictif du projet">
+                    <h2>Emmanuel Josiah</h2>
+                    <h3>Designer UI/UX</h3>
+                    <h3>3.000FCFA/h</h3>
+                    <p>Designer depuis 5 ans disponible pour tous projets en rapport avec le Design graphique</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Tony Ikounga.png" alt="Image de personnage fictif du projet">
+                    <h2>Tony Ikounga</h2>
+                    <h3>Data scientist</h3>
+                    <h3>15.000FCFA/h</h3>
+                    <p>Data scientist depuis 5 ans disponible pour tous projets en rapport avec l'intelligence artificielle</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Makny Nzoulou.png" alt="Image de personnage fictif du projet">
+                    <h2>Makny Nzoulou</h2>
+                    <h3>Rédacteur Tech</h3>
+                    <h3>7.500FCFA/h</h3>
+                    <p>Rédacteur tech depuis 5 ans disponible pour tous projets en rapport avec la rédaction tech</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Syntyche Moulongo.png" alt="Image de personnage fictif du projet">
+                    <h2>Syntyche Moulongo</h2>
+                    <h3>Développeur Web</h3>
+                    <h3>6.000FCFA/h</h3>
+                    <p>Développeur web depuis 6 ans disponible pour tous projets en rapport avec le web</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Elischeba Mouithys.png" alt="Image de personnage fictif du projet">
+                    <h2>Elischeba Mouithys</h2>
+                    <h3>Cloud engineer</h3>
+                    <h3>12.000FCFA/h</h3>
+                    <p>Cloud engineer depuis 8 ans disponible pour tous projets en rapport avec le Cloud</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/Dorcas Mouyabi.png" alt="Image de personnage fictif du projet">
+                    <h2>Dorcas Mouyabi</h2>
+                    <h3>Développeur Web</h3>
+                    <h3>7.500FCFA/h</h3>
+                    <p>Développeur web depuis 7 ans disponible pour tous projets en rapport avec le web</p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <button>Voir le profil</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- Dispositionn responsive -->
 
     <!-- Bootstrap 5 via CDN: script JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
