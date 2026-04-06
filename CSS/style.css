@@ -1,0 +1,37 @@
+:root{
+    --couleur-principale: #55a630;
+    --couleur-secondaire: #31572c;
+    --couleur-tertiaire:  #007f5f;
+    --quatrième-couleur:  #2b9348;
+    --first-google-fonts: 'Nunito Sans', sans-serif;
+    --second-google-fonts: 'Montserrat', sans-serif;
+}
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navMenu ul{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    width: 7em;
+    list-style: none;
+
+}
+.navbar-brand img{
+    width: 50px;
+    border-radius: 2em;
+}
+.nav-item a{
+    font-size: 1.225em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: antiquewhite;
+}
+/* Changement de couleur de texte lors du survole */
+a:hover{
+    color: gray;
+}
