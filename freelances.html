@@ -9,45 +9,51 @@
     <!-- Lien CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="images/AfriTalent.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="freelances.html">Freelance</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="tarifs.html">Tarifs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contacts.html">Contact</a>
-                    </li>
-                </ul>
+<body id="freelance">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="images/AfriTalent No background.png" alt="Logo AfriTalent">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="freelances.html">Freelance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tarifs.html">Tarifs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
+    </header>
+    <h1>Nos différents freelances</h1>
     <!-- filtrage par catégories réalisé en JS -->
-    <ul>
-        <li>
-            <!-- Attribut class="card" pour spécifier que c'est une card Bootstrap 5 -->
+    <div id="container">
+        <!-- Attribut class="card" pour spécifier que c'est une card Bootstrap 5 -->
+        <div id="pofil1">    
             <div class="card">
-                <!-- class="card-body" pour spécifier le corps de la carte Bootstrap 5 -->
+            <!-- class="card-body" pour spécifier le corps de la carte Bootstrap 5 -->
                 <div class="card-body">
-                    <img src="images/Pascal Céleste.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Pascal Céleste.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Pascal Céleste</h2>
                     <h3>Développeur Web</h3>
                     <h3>5.000FCFA/h</h3>
@@ -59,11 +65,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil2">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Keisha Mouele.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Keisha Mouele.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Keisha Mouele</h2>
                     <h3>Développeur Full Stack</h3>
                     <h3>10.000FCFA/h</h3>
@@ -75,11 +83,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil3">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Christelle Mouithyss.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Christelle Mouithyss.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Christelle Mouithyss</h2>
                     <h3>Marketing digital</h3>
                     <h3>7.000FCFA/h</h3>
@@ -91,11 +101,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil4">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Emmanuel Josiah.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Emmanuel Josiah.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Emmanuel Josiah</h2>
                     <h3>Designer UI/UX</h3>
                     <h3>3.000FCFA/h</h3>
@@ -107,11 +119,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil5">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Tony Ikounga.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Tony Ikounga.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Tony Ikounga</h2>
                     <h3>Data scientist</h3>
                     <h3>15.000FCFA/h</h3>
@@ -123,11 +137,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil6">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Makny Nzoulou.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Makny Nzoulou.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Makny Nzoulou</h2>
                     <h3>Rédacteur Tech</h3>
                     <h3>7.500FCFA/h</h3>
@@ -139,11 +155,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil7">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Syntyche Moulongo.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Syntyche Moulongo.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Syntyche Moulongo</h2>
                     <h3>Développeur Web</h3>
                     <h3>6.000FCFA/h</h3>
@@ -155,11 +173,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil8">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Elischeba Mouithys.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Elischeba Mouithys.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Elischeba Mouithys</h2>
                     <h3>Cloud engineer</h3>
                     <h3>12.000FCFA/h</h3>
@@ -171,11 +191,13 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div id="profil9">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/Dorcas Mouyabi.png" alt="Image de personnage fictif du projet">
+                    <div class="images">
+                        <img src="images/Dorcas Mouyabi.png" alt="Image de personnage fictif du projet">
+                    </div>
                     <h2>Dorcas Mouyabi</h2>
                     <h3>Développeur Web</h3>
                     <h3>7.500FCFA/h</h3>
@@ -187,8 +209,8 @@
                     <button>Voir le profil</button>
                 </div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
     <!-- Dispositionn responsive -->
 
     <!-- Bootstrap 5 via CDN: script JavaScript -->
