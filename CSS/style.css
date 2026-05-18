@@ -17,12 +17,20 @@ body{
 }
 header{
     height: 15vh;
+    box-sizing: border-box;
+    background: #222;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-sizing: border-box;
+}
+.navbar{
+    background: transparent;
+    transition: 0.3s;
+}
+nav{
+    height: 100%;
 }
 #navMenu ul{
     display: flex;
@@ -57,7 +65,7 @@ a:hover{
     color: antiquewhite;
     padding-bottom: 2em;
     height: 100vh;
-    background: linear-gradient(to right, var(--couleur-tertiaire), var(--couleur-tertiaire), #bcbcbc, var(--couleur-tertiaire), var(--couleur-tertiaire), var(--couleur-tertiaire), #bcbcbc, var(--couleur-tertiaire), var(--couleur-tertiaire));
+    background: var(--quatrième-couleur);
 }
 #hero ul{
     display: flex;
@@ -75,7 +83,7 @@ a:hover{
     padding: 5em;
     border-radius: 3em;
     width: 40em;
-    background: rgb(0, 95, 0);
+    background: var(--couleur-tertiaire);
     color: #fff;
 }
 #hero h1{
@@ -102,7 +110,543 @@ button{
     color: white;
     font-weight: bolder;
     font-family: var(--first-google-fonts);
+    background-color: var(--couleur-tertiaire);
+    padding: 2em;
+    margin: 2em;
+}
+button:hover{
+    /* Effet de zoom avec ombre autour de la case */
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0);
+}
+#comment_ca_marche{
+    margin-top: 7em;
+}
+#comment_ca_marche h2{
+    background: var(--couleur-principale);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: 2em;
+    text-align: center;
+}
+#comment_ca_marche #container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(1fr,1);
+    grid-template-columns: repeat(1fr,4);
+}
+#first{
+    margin-left: .5em;
+    grid-column: 1;
+    grid-row: 1;
+}
+#second{
+    grid-column: 2;
+    grid-row: 1;
+}
+#third{
+    grid-column: 3;
+    grid-row: 1;
+}
+#fourth{
+    grid-column: 4;
+    grid-row: 1;
+}
+#comment_ca_marche .card{
+    padding-top: 2em;
+    border-radius: 2em;
+    border-color: black;
+    text-align: center;
+    color: black;
+    height: 70vh;
+    width: 19em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#comment_ca_marche .card:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#categories_de_service .card{
+    padding-top: 2em;
+    border-color: black;
+    border-radius: 2em;
+    text-align: center;
+    color: black;
+    height: 60vh;
+    width: 19em;
+}
+#categories_de_service .card:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.card i{
+    font-weight: bold;
+}
+.card h3{
+    margin-top: 2em;
+}
+.card h3, .card p{
+    font-family: var(--second-google-fonts);
+    }
+#categories_de_service{
+    margin-bottom: 15em;
+}
+#categories_de_service h2{
+    background: var(--couleur-principale);
+    color: white;
+    font-family: var(--first-google-fonts);
+    margin-bottom: 2em;
+    text-align: center;
+}
+#categories_de_service .card{
+    width: 12em;
+    height: 40vh;
+}
+#categories_de_service .card h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#container_2{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(1fr,6);
+}
+#div1{
+    margin-left: .5em;
+    grid-row: 1;
+    grid-column: 1;
+}
+#div2{
+    grid-row: 1;
+    grid-column: 2;
+}
+#div3{
+    grid-row: 1;
+    grid-column: 3;
+}
+#div4{
+    grid-row: 1;
+    grid-column: 4;
+}
+#div5{
+    grid-row: 1;
+    grid-column: 5;
+}
+#div6{
+    grid-row: 1;
+    grid-column: 6;
+}
+#next, #prev{
+    border-radius: 5em;
+    height: 15vh;
+    width: 2em;
+    background: #31572c;
+}
+.carousel-item .card{
+    margin-left: 38%;
+}
+#temoignages h2{
+    background: var(--couleur-principale);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: 2em;
+    text-align: center;
+}
+#cta{
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 5em;
+}
+#temoignages .card{
+    width: 25em;
+    padding: 2em;
+    height: 70vh;
+    border: solid 2px black;
+    border-radius: 2em;
+}
+#temoignages .card:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#cta{
+    margin: 2em;
+}
+footer{
+    background: var(--quatrième-couleur);
+    color: white;
+    font-family: var(--couleur-principale);
+}
+footer p{
+    font-size: larger;
+    margin-left: 1em;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+#container_4{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    grid-template-rows: 1;
+}
+#col1{
+    width: 20em;
+    grid-column: 1;
+    grid-row: 1;
+}
+#col2{
+    width: 35em;
+    grid-column: 2;
+    grid-row: 1;
+}
+#col3{
+    text-align: center;
+    width: 25em;
+    grid-column: 3;
+    grid-row: 1;
+}
+#col1, #col2, #col3{
+    background: var(--couleur-tertiaire);
+    border-radius: 3em;
+}
+#logo{
+    margin-bottom: 2em;
+    width: 100px;
+    border-radius: 5em;
+    text-align: center;
+}
+#col4 h3, #col2 h3{
+    text-align: center;
+    margin-bottom: 2em;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+footer li{
+    list-style: none;
+}
+#index i{
+    font-size: 2em;
+}
+/* CSS de contacts.html */
+#contact h1{
+    background: var(--couleur-tertiaire);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: .5em;
+    text-align: center;
+    height: 50vh;
+    padding-top: 1.5em;
+    font-weight: bold;
+    font-size: 5em;
+}
+#container_contacts form{
+    margin-top: 2em;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 50%;
+    border: 2px black;
+    border-radius: 2em;
+    width: 40vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    background: var(--couleur-tertiaire);
+}
+iframe{
+    border-radius: 2em;
+    width: 35em;
+    margin-left: 22em;
+    margin-top: 2em;
+}
+.space{
+    width: 10em;
+}
+form div{
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+#envoyer{
+    transition: 0.3s;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
     background-color: rgb(0, 95, 0);
+    padding: 2em;
+    margin: 2em;
+}
+#envoyer:hover{
+    /* Effet de zoom avec ombre autour de la case */
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0);
+}
+/* CSS pour tarifs.html */
+#title_tarifs{
+    background: var(--couleur-tertiaire);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: .5em;
+    text-align: center;
+    height: 50vh;
+    padding-top: 1.5em;
+    font-weight: bold;
+    font-size: 5em;
+}
+#container_tarifs{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(1fr,1);
+    grid-template-columns: repeat(1fr,3);
+}
+#container_tarifs .card:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    gap: 2em;
+}
+
+#card1{
+    border: solid 2px black;
+    border-radius: 2em;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1em;
+    height: 50vh;   
+}
+#card2{
+    border: solid 2px black;
+    border-radius: 2em;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 1em;
+    height: 50vh;
+}
+#card3{
+    border: solid 2px black;
+    border-radius: 2em;
+    grid-column: 3;
+    grid-row: 1;
+    margin: 1em;
+    height: 50vh;
+}
+/* CSS pour freelances */
+#freelance h1{
+    background: var(--couleur-tertiaire);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: .5em;
+    text-align: center;
+    height: 50vh;
+    padding-top: 1.5em;
+    font-weight: bold;
+    font-size: 5em;
+}
+#freelance img{
+    height: 20vh;
+    width: 7em;
+    border-radius: 5em;
+}
+#freelance_container{
+    margin-left: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr,3);
+    margin-top: 2em;
+}
+#profil1{
+    grid-column: 1;
+    grid-row: 1;
+}
+#profil2{
+    grid-column: 2;
+    grid-row: 1;
+}
+#profil3{
+    grid-row: 1;
+    grid-column: 3;
+}
+#profil4{
+    grid-column: 1;
+    grid-row: 2;
+}
+#profil5{
+    grid-column: 2;
+    grid-row: 2;
+}
+#profil6{
+    grid-column: 3;
+    grid-row: 2;
+}
+#profil7{
+    grid-column: 1;
+    grid-row: 3;
+}
+#profil8{
+    grid-column: 2;
+    grid-row: 3;
+}
+#profil9{
+    grid-column: 3;
+    grid-row: 3;
+}
+#freelance_container .card-body{
+    border: solid 2px black;
+    border-radius: 2em;
+    width: 23em;
+    margin-bottom: 2em;
+    text-align: center;
+    height: 100vh;
+}
+#freelance_container .card-body:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#freelance_container .card{
+    border: none;
+}
+#freelance_container button{
+    height: 2em;
+    padding-top: .5em;
+}
+/* CSS pour about.html */
+#about section{
+    margin-bottom: 5em;
+}
+#about h1{
+    color: #fff;
+    text-align: center;
+    background: var(--couleur-tertiaire);
+    font-family: var(--second-google-fonts);
+}
+#histoire{
+    margin-top: 2em;
+    padding-top: 2em;
+    height: 80vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5)), url("../images/26389178-groupe-de-affaires-gens-avoir-une-reunion-a-propos-entreprise-statistiques-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#histoire p{
+    margin-top: 2em;
+    font-family: var(--first-google-fonts);
+    color: #fff;
+}
+#about .card{
+    margin-top: 2em;
+    border: none;
+}
+#about .card-body{
+    border-radius: 2em;
+    border: solid 2px black;
+    height: 70vh;
+}
+#about .card-body:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    gap: 2em;
+}
+#about ul{
+    display: flex;
+    gap: 50px;
+}
+#about li{
+    list-style: none;
+}
+#equipe img{
+    width: 300px;
+    height: 40vh;
+    border-radius: 10em;
+}
+#valeurs ul:last-child{
+    margin-right: 2em;
+}
+#valeurs .card-body{
+    text-align: center;
+}
+#valeurs i{
+    font-size: 2em;
+}
+#hero{
+    padding-top: .25em;
+    text-align: center;
+    color: antiquewhite;
+    padding-bottom: 2em;
+    height: 100vh;
+    background: var(--quatrième-couleur);
+}
+#hero ul{
+    display: flex;
+    gap: 25em;
+}
+#hero li{
+    list-style: none;
+}
+#hero img{
+    margin-top: 5em;
+    width: 30em;
+    border-radius: 5em;
+}
+#main_card{
+    padding: 5em;
+    border-radius: 3em;
+    width: 40em;
+    background: var(--couleur-tertiaire);
+    color: #fff;
+}
+#hero h1{
+    font-family: var(--first-google-fonts);
+    font-size: 5em;
+}
+#hero h2{
+    font-family: var(--first-google-fonts);
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+#hero div{
+    margin-top: 3em;
+}
+#cta1{
+    border-radius: 2em;
+}
+button p{
+    font-family: var(--first-google-fonts);
+    font-size: 2em;
+}
+button{
+    transition: 0.3s;
+    color: white;
+    font-weight: bolder;
+    font-family: var(--first-google-fonts);
+    background-color: var(--couleur-tertiaire);
     padding: 2em;
     margin: 2em;
 }
@@ -254,6 +798,7 @@ button:hover{
     text-align: center;
 }
 #cta{
+    border-radius: 2em;
     text-align: center;
     margin-top: 5em;
 }
@@ -274,7 +819,7 @@ button:hover{
     margin: 2em;
 }
 footer{
-    background: linear-gradient(to right, var(--couleur-tertiaire), var(--couleur-tertiaire), #bcbcbc, var(--couleur-tertiaire), var(--couleur-tertiaire), var(--couleur-tertiaire), #bcbcbc, var(--couleur-tertiaire), var(--couleur-tertiaire));
+    background: var(--quatrième-couleur);
     color: white;
     font-family: var(--couleur-principale);
 }
@@ -310,7 +855,7 @@ footer a{
     grid-row: 1;
 }
 #col1, #col2, #col3{
-    background: rgb(0, 95, 0);
+    background: var(--couleur-tertiaire);
     border-radius: 3em;
 }
 #logo{
@@ -335,7 +880,7 @@ footer li{
 }
 /* CSS de contacts.html */
 #contact h1{
-    background: var(--couleur-principale);
+    background: var(--couleur-tertiaire);
     color: white;
     font-family: var(--second-google-fonts);
     margin-bottom: .5em;
@@ -393,7 +938,7 @@ form div{
 }
 /* CSS pour tarifs.html */
 #title_tarifs{
-    background: var(--couleur-principale);
+    background: var(--couleur-tertiaire);
     color: white;
     font-family: var(--second-google-fonts);
     margin-bottom: .5em;
@@ -444,7 +989,7 @@ form div{
 }
 /* CSS pour freelances */
 #freelance h1{
-    background: var(--couleur-principale);
+    background: var(--couleur-tertiaire);
     color: white;
     font-family: var(--second-google-fonts);
     margin-bottom: .5em;
@@ -531,7 +1076,7 @@ form div{
 #about h1{
     color: #fff;
     text-align: center;
-    background: var(--couleur-principale);
+    background: var(--couleur-tertiaire);
     font-family: var(--second-google-fonts);
 }
 #histoire{
@@ -601,34 +1146,34 @@ img{
 /* TABLETTE : 768px */
 
 @media screen and (max-width: 768px){
-
+    
     body{
         padding-top: 12vh;
     }
 
     /* NAVBAR */
-
+    
     header{
         height: auto;
     }
-
+    
     #navMenu ul{
         flex-direction: column;
         align-items: center;
         gap: 1em;
     }
-
+    
     .nav-item{
         width: auto;
         text-align: center;
     }
-
+    
     .container img{
         width: 5em;
     }
-
+    
     /* HERO */
-
+    
     #hero{
         height: auto;
         padding: 3em 1em;
@@ -640,28 +1185,28 @@ img{
         align-items: center;
         padding: 0;
     }
-
+    
     #hero img{
         width: 20em;
         margin-top: 2em;
     }
-
+    
     #main_card{
         margin-left: 2.5em;
         width: 90%;
         padding: 2em;
     }
-
+    
     #hero h1{
         font-size: 3em;
     }
-
+    
     #hero h2{
         font-size: 1.5em;
     }
-
+    
     /* COMMENT ÇA MARCHE */
-
+    
     #comment_ca_marche #container{
         height: auto;
         display: grid;
@@ -669,7 +1214,7 @@ img{
         gap: 2em;
         justify-items: center;
     }
-
+    
     #first{
         margin: 0;
         text-align: center;
@@ -691,7 +1236,7 @@ img{
         grid-column: 2;
         grid-row: 2;
     }
-
+    
     #comment_ca_marche .card{
         width: 16em;
         height: auto;
@@ -738,25 +1283,25 @@ img{
         grid-column: 2;
         grid-row: 3;
     }
-
+    
     #categories_de_service .card{
         width: 15em;
         height: auto;
         padding-bottom: 2em;
     }
-
+    
     /* TÉMOIGNAGES */
-
+    
     .carousel-item .card{
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     #temoignages .card{
         width: 80%;
         height: auto;
     }
-
+    
     /* FOOTER */
 
     #container_4{
@@ -765,7 +1310,7 @@ img{
         gap: 2em;
         padding: 2em;
     }
-
+    
     #col1{
         text-align: center;
         grid-column: 1;
@@ -782,20 +1327,20 @@ img{
         grid-column: 1;
         grid-row: 2;
     }
-
+    
     footer ul{
         justify-content: center;
         gap: 2em;
     }
-
+    
     /* TARIFS */
-
+    
     #container_tarifs{
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
     }
-
+    
     #card1{
         text-align: center;
         grid-column: 1;
@@ -873,14 +1418,14 @@ img{
         width: 18em;
         height: auto;
     }
-
+    
     /* ABOUT */
-
+    
     #about ul{
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    
     #equipe img{
         width: 220px;
         height: auto;
@@ -908,7 +1453,7 @@ img{
         margin-left: 0;
     }
     /* COMMENT ÇA MARCHE */
-
+    
     #comment_ca_marche #container{
         height: auto;
         display: grid;
@@ -916,7 +1461,7 @@ img{
         gap: 2em;
         justify-items: center;
     }
-
+    
     #first{
         margin: 0;
         text-align: center;
@@ -938,15 +1483,15 @@ img{
         grid-column: 1;
         grid-row: 4;
     }
-
+    
     #comment_ca_marche .card{
         width: 16em;
         height: auto;
         padding-bottom: 2em;
     }
-
+    
     /* SERVICES */
-
+    
     #container_2{
         margin-left: 3.5em;
         display: grid;
@@ -954,7 +1499,7 @@ img{
         gap: 2em;
         justify-items: center;
     }
-
+    
     #div1{
         margin-left: 0;
         text-align: center;
@@ -986,20 +1531,20 @@ img{
         grid-column: 1;
         grid-row: 6;
     }
-
+    
     #categories_de_service .card{
         width: 15em;
         height: auto;
         padding-bottom: 2em;
     }
-
+    
     /* TÉMOIGNAGES */
 
     .carousel-item .card{
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     #temoignages .card{
         width: 80%;
         height: auto;
@@ -1013,7 +1558,7 @@ img{
         gap: 2em;
         padding: 2em;
     }
-
+    
     #col1{
         text-align: center;
         grid-column: 1;
@@ -1030,7 +1575,7 @@ img{
         grid-column: 1;
         grid-row: 3;
     }
-
+    
     footer ul{
         justify-content: center;
         gap: 2em;
@@ -1043,7 +1588,7 @@ img{
         display: grid;
         grid-template-columns: 1fr;
     }
-
+    
     #card1{
         text-align: center;
         grid-column: 1;
@@ -1123,9 +1668,9 @@ img{
         width: 18em;
         height: auto;
     }
-
+    
     /* ABOUT */
-
+    
     #about ul{
         flex-wrap: wrap;
         justify-content: center;
@@ -1146,36 +1691,644 @@ img{
     iframe{
         width: 35em;
     }
-
+    
 }
 
 /* DESKTOP : +1200px */
 
 @media screen and (min-width: 1200px){
-
+    
     .container{
         max-width: 1400px;
     }
-
+    
     #hero ul{
         justify-content: center;
         align-items: center;
     }
-
+    
     #comment_ca_marche #container{
         justify-items: center;
     }
-
+    
     #container_2{
         justify-items: center;
     }
-
+    
     #container_4{
         padding: 3em;
         gap: 3em;
     }
-
+    
     #freelance #container{
         justify-items: center;
     }
+}
+/* Bouton light/dark theme */
+#theme{
+    background: none;
+    border: 2px solid white;
+    border-radius: 2em;
+    height: 7vh;
+    width: 5em;
+    margin-top: 0;
+    padding: 0;
+    margin-left: 1em;
+    margin-bottom: 0.25em;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .card {
+    background: none;
+    border-color: 2px solid white;
+}
+.dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme p, .dark-theme i{
+    color: #fff;
+}
+.dark-theme #hero, .dark-theme footer{
+    background: var(--couleur-secondaire);
+}
+.dark-theme #cta1, .dark-theme #col1, .dark-theme #col2, .dark-theme #col3, .dark-theme #main_card, .dark-theme button, .dark-theme #envoyer{
+    background-color: rgb(0, 95, 0);
+}
+
+/* Light theme */
+.light #hero{
+    padding-top: .25em;
+    text-align: center;
+    color: antiquewhite;
+    padding-bottom: 2em;
+    height: 100vh;
+    background: var(--quatrième-couleur);
+}
+.light #hero ul{
+    display: flex;
+    gap: 25em;
+}
+.light #hero li{
+    list-style: none;
+}
+.light #hero img{
+    margin-top: 5em;
+    width: 30em;
+    border-radius: 5em;
+}
+.light #main_card{
+    padding: 5em;
+    border-radius: 3em;
+    width: 40em;
+    background: var(--couleur-tertiaire);
+    color: #fff;
+}
+.light #hero h1{
+    font-family: var(--first-google-fonts);
+    font-size: 5em;
+}
+.light #hero h2{
+    font-family: var(--first-google-fonts);
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+.light  #hero div{
+    margin-top: 3em;
+}
+.light #cta1{
+    border-radius: 2em;
+}
+.light button p{
+    font-family: var(--first-google-fonts);
+    font-size: 2em;
+}
+.light button{
+    transition: 0.3s;
+    color: white;
+    font-weight: bolder;
+    font-family: var(--first-google-fonts);
+    background-color: var(--couleur-tertiaire);
+    padding: 2em;
+    margin: 2em;
+}
+.light button:hover{
+    /* Effet de zoom avec ombre autour de la case */
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0);
+}
+.light #comment_ca_marche{
+    margin-top: 7em;
+}
+.light #comment_ca_marche h2{
+    background: var(--couleur-principale);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: 2em;
+    text-align: center;
+}
+.light #comment_ca_marche #container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(1fr,1);
+    grid-template-columns: repeat(1fr,4);
+}
+.light #first{
+    margin-left: .5em;
+    grid-column: 1;
+    grid-row: 1;
+}
+.light #second{
+    grid-column: 2;
+    grid-row: 1;
+}
+.light #third{
+    grid-column: 3;
+    grid-row: 1;
+}
+.light #fourth{
+    grid-column: 4;
+    grid-row: 1;
+}
+.light #comment_ca_marche .card{
+    padding-top: 2em;
+    border-radius: 2em;
+    border-color: black;
+    text-align: center;
+    color: black;
+    height: 70vh;
+    width: 19em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.light #comment_ca_marche .card:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.light #categories_de_service .card{
+    padding-top: 2em;
+    border-color: black;
+    border-radius: 2em;
+    text-align: center;
+    color: black;
+    height: 60vh;
+    width: 19em;
+}
+.light #categories_de_service .card:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.light .card i{
+    font-weight: bold;
+}
+.light .card h3{
+    margin-top: 2em;
+}
+.light .card h3, .light .card p{
+    font-family: var(--second-google-fonts);
+}
+.light #categories_de_service{
+    margin-bottom: 15em;
+}
+.light #categories_de_service h2{
+    background: var(--couleur-principale);
+    color: white;
+    font-family: var(--first-google-fonts);
+    margin-bottom: 2em;
+    text-align: center;
+}
+.light #categories_de_service .card{
+    width: 12em;
+    height: 40vh;
+}
+.light #categories_de_service .card h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.light #container_2{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(1fr,6);
+}
+.light #div1{
+    margin-left: .5em;
+    grid-row: 1;
+    grid-column: 1;
+}
+.light #div2{
+    grid-row: 1;
+    grid-column: 2;
+}
+.light #div3{
+    grid-row: 1;
+    grid-column: 3;
+}
+.light #div4{
+    grid-row: 1;
+    grid-column: 4;
+}
+.light #div5{
+    grid-row: 1;
+    grid-column: 5;
+}
+.light #div6{
+    grid-row: 1;
+    grid-column: 6;
+}
+.light #next, .light #prev{
+    border-radius: 5em;
+    height: 15vh;
+    width: 2em;
+    background: #31572c;
+}
+.light .carousel-item .card{
+    margin-left: 38%;
+}
+.light #temoignages h2{
+    background: var(--couleur-principale);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: 2em;
+    text-align: center;
+}
+.light #cta{
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 5em;
+}
+.light #temoignages .card{
+    width: 25em;
+    padding: 2em;
+    height: 70vh;
+    border: solid 2px black;
+    border-radius: 2em;
+}
+.light #temoignages .card:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.light #cta{
+    margin: 2em;
+}
+.light .footer{
+    background: var(--quatrième-couleur);
+    color: white;
+    font-family: var(--couleur-principale);
+}
+.light .footer p{
+    font-size: larger;
+    margin-left: 1em;
+}
+.light .footer a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+.light #container_4{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    grid-template-rows: 1;
+}
+.light #col1{
+    width: 20em;
+    grid-column: 1;
+    grid-row: 1;
+}
+.light #col2{
+    width: 35em;
+    grid-column: 2;
+    grid-row: 1;
+}
+.light #col3{
+    text-align: center;
+    width: 25em;
+    grid-column: 3;
+    grid-row: 1;
+}
+.light #col1, .light #col2, .light #col3{
+    background: var(--couleur-tertiaire);
+    border-radius: 3em;
+}
+.light #logo{
+    margin-bottom: 2em;
+    width: 100px;
+    border-radius: 5em;
+    text-align: center;
+}
+.light #col4 h3, .light #col2 h3{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.light .footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+.light .footer li{
+    list-style: none;
+}
+.light #index i{
+    font-size: 2em;
+}
+/* CSS de contacts.html */
+.light #contact h1{
+    background: var(--couleur-tertiaire);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: .5em;
+    text-align: center;
+    height: 50vh;
+    padding-top: 1.5em;
+    font-weight: bold;
+    font-size: 5em;
+}
+.light #container_contacts form{
+    margin-top: 2em;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 50%;
+    border: 2px black;
+    border-radius: 2em;
+    width: 40vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    background: var(--couleur-tertiaire);
+}
+.light iframe{
+    border-radius: 2em;
+    width: 35em;
+    margin-left: 22em;
+    margin-top: 2em;
+}
+.light .space{
+    width: 10em;
+}
+.light form div{
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.light #envoyer{
+    transition: 0.3s;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0, 95, 0);
+    padding: 2em;
+    margin: 2em;
+}
+.light #envoyer:hover{
+    /* Effet de zoom avec ombre autour de la case */
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0);
+}
+/* CSS pour tarifs.html */
+.light #title_tarifs{
+    background: var(--couleur-tertiaire);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: .5em;
+    text-align: center;
+    height: 50vh;
+    padding-top: 1.5em;
+    font-weight: bold;
+    font-size: 5em;
+}
+.light #container_tarifs{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(1fr,1);
+    grid-template-columns: repeat(1fr,3);
+}
+.light #container_tarifs .card:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    gap: 2em;
+}
+
+.light #card1{
+    border: solid 2px black;
+    border-radius: 2em;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1em;
+    height: 50vh;   
+}
+.light #card2{
+    border: solid 2px black;
+    border-radius: 2em;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 1em;
+    height: 50vh;
+}
+.light #card3{
+    border: solid 2px black;
+    border-radius: 2em;
+    grid-column: 3;
+    grid-row: 1;
+    margin: 1em;
+    height: 50vh;
+}
+/* CSS pour freelances */
+.light #freelance h1{
+    background: var(--couleur-tertiaire);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: .5em;
+    text-align: center;
+    height: 50vh;
+    padding-top: 1.5em;
+    font-weight: bold;
+    font-size: 5em;
+}
+.light #freelance img{
+    height: 20vh;
+    width: 7em;
+    border-radius: 5em;
+}
+.light #freelance_container{
+    margin-left: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr,3);
+    margin-top: 2em;
+}
+.light #profil1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.light #profil2{
+    grid-column: 2;
+    grid-row: 1;
+}
+.light #profil3{
+    grid-row: 1;
+    grid-column: 3;
+}
+.light #profil4{
+    grid-column: 1;
+    grid-row: 2;
+}
+.light #profil5{
+    grid-column: 2;
+    grid-row: 2;
+}
+.light #profil6{
+    grid-column: 3;
+    grid-row: 2;
+}
+.light #profil7{
+    grid-column: 1;
+    grid-row: 3;
+}
+.light #profil8{
+    grid-column: 2;
+    grid-row: 3;
+}
+.light #profil9{
+    grid-column: 3;
+    grid-row: 3;
+}
+.light #freelance_container .card-body{
+    border: solid 2px black;
+    border-radius: 2em;
+    width: 23em;
+    margin-bottom: 2em;
+    text-align: center;
+    height: 100vh;
+}
+.light #freelance_container .card-body:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.light #freelance_container .card{
+    border: none;
+}
+.light #freelance_container button{
+    height: 2em;
+    padding-top: .5em;
+}
+/* CSS pour about.html */
+.light #about section{
+    margin-bottom: 5em;
+}
+.light #about h1{
+    color: #fff;
+    text-align: center;
+    background: var(--couleur-tertiaire);
+    font-family: var(--second-google-fonts);
+}
+.light #histoire{
+    margin-top: 2em;
+    padding-top: 2em;
+    height: 80vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5)), url("../images/26389178-groupe-de-affaires-gens-avoir-une-reunion-a-propos-entreprise-statistiques-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.light #histoire p{
+    margin-top: 2em;
+    font-family: var(--first-google-fonts);
+    color: #fff;
+}
+.light #about .card{
+    margin-top: 2em;
+    border: none;
+}
+.light #about .card-body{
+    border-radius: 2em;
+    border: solid 2px black;
+    height: 70vh;
+}
+.light #about .card-body:hover{
+    border: white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    gap: 2em;
+}
+.light #about ul{
+    display: flex;
+    gap: 50px;
+}
+.light #about li{
+    list-style: none;
+}
+.light #equipe img{
+    width: 300px;
+    height: 40vh;
+    border-radius: 10em;
+}
+.light #valeurs ul:last-child{
+    margin-right: 2em;
+}
+.light #valeurs .card-body{
+    text-align: center;
+}
+.light #valeurs i{
+    font-size: 2em;
+}
+
+/* Navbar dynamique au scroll */
+.scroll nav{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+/* Effet shrink */
+.navbar{
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.navbar.shrink{
+    height: 70%;
+    padding: 8px 0;
+    background: rgba(0,0,0,0.85);
+}
+
+.navbar img{
+    width: 120px;
+    transition: 0.3s;
+}
+
+.navbar.shrink img{
+    width: 80px;
+}
+
+/* Bouton de retour en haut */
+.top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    z-index: 999;
+    border-radius: 3em;   
 }
