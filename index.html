@@ -51,7 +51,7 @@
             </div>
         </nav>
     </header>
-    <section id="hero">
+    <section id="hero" class="fade_in">
         <ul>
             <li>
                 <img src="images/AfriTalent No background.png" alt="Logo AfriTalent">
@@ -65,16 +65,31 @@
                         Là où les entreprises et les freelances se rencontrent ! <br>
                         Inscrivez-vous maintenant !(Subscribe right now !)
                     </h2>
-                    <!-- Compteurs JavaScript -->
                 </div>
             </li>
         </ul>
+        <!-- Compteurs JavaScript -->
+        <div id="compteurs">
+            <ul>
+                <li>
+                    <h2 id="cpt">0</h2>
+                    <p>Freelances</p>                    
+                </li>
+                <li>
+                    <h2 id="cpt2">0</h2>
+                    <p>Entreprises</p>
+                </li>
+                <li>
+                    <h2 id="cpt3">0</h2>
+                    <p>Missions réalisées</p>
+                </li>
+            </ul>
+        </div>
         <div>
             <button id="cta1"><span>Rejoindre AfriTalent !</span></button>
         </div>
-        <div id="top"></div>
     </section>
-    <section id="comment_ca_marche">
+    <section id="comment_ca_marche" class="fade_in">
         <h2>Comment ça marche ?</h2>
         <div id="container">
             <div class="card col-12 col-md-6 col-lg-4" id="first">
@@ -109,7 +124,7 @@
             </div>
         </div>
     </section>
-    <section id="categories_de_service">
+    <section id="categories_de_service" class="fade_in">
         <h2>Catégories de services</h2>
         <div id="container_2">
             <div class="card col-12 col-md-6 col-lg-4" id="div1">
@@ -144,18 +159,18 @@
             </div>
         </div>
     </section>
-    <section id="temoignages">
+    <section id="temoignages" class="fade_in">
         <h2>Témoignages</h2>
         <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicateurs optionels -->
-             <div class="carousel-indicators">
+            <div class="carousel-indicators">
                 <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Témoignage 1"></button>
                 <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Témoignage 2"></button>
                 <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Témoignage 3"></button>
                 <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Témoignage 4"></button>
                 <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Témoignage 5"></button>
-             </div>
-             <div class="carousel-inner">
+            </div>
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="card" id="tem1">
                         <i class="bi bi-person"></i>
@@ -228,19 +243,19 @@
                 </div>
              </div>
              <!-- Contrôles précédent/suivant -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" id="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Précédent</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" id="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">suivant</span>
-              </button>
-        </div>
-    </section>
-    <section id="cta">
-        <button>S'inscrire</button>
-    </section>
+             <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" id="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" id="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">suivant</span>
+                </button>
+            </div>
+        </section>
+        <section id="cta">
+            <button>S'inscrire</button>
+        </section>
     <footer>
         <div id="container_4">
             <div id="col1">
@@ -288,10 +303,11 @@
             </div>
         </div>
     </footer>
-
+    
     <!-- Bootstrap 5 via CDN: script JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
+    <div id="top"></div>
     <!-- Script JS -->
     <script src="JS/main.js"></script>
 </body>
