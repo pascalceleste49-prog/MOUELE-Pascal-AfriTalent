@@ -1822,9 +1822,38 @@ img{
     opacity: 1;
     transform: translateY(0);
 }
-/* .error{
+
+/* Filtrage par catégories */
+#freelance.web .card, #freelance.marketing .card, #freelance.redaction .card, #freelance.cloud .card, #freelance.data_ia .card, #freelance.design .card{
+    display: none;
+}
+#freelance.web .web{
+    display: block;
+}
+#freelance.marketing .marketing{
+    display: block;
+}
+#freelance.data_ia .data_ia{
+    display: block;
+}
+#freelance.redaction .redaction{
+    display: block;
+}
+#freelance.cloud .cloud{
+    display: block;
+}
+#freelance.design .design{
+    display: block;
+}
+.error{
     color: red;
     font-size: 12px;
     display: block;
     margin-top: 5px;
-} */
+}
+.success{
+    color: green;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}

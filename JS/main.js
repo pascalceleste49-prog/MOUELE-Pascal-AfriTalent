@@ -188,3 +188,60 @@ let observer = new IntersectionObserver((entries) => {
 fade_in.forEach((section) => {
     observer.observe(section);
 });
+
+// Filtrage par catégories
+let cat = document.getElementById("cat");
+let freelance = document.getElementById("freelance");
+if(cat && freelance){
+    cat.addEventListener("change", function (){
+    freelance.classList.remove("web","marketing","cloud","redaction","data_ia","design");
+    let val = cat.value;
+    if(val !== "default"){
+        freelance.classList.add(val);
+    }
+});
+}
+// Validation du formulaire de contact
+let form = document.querySelector("form");
+let nom = document.getElementById("nom");
+let prenom = document.getElementById("prenom");
+let mail = document.getElementById("mail");
+let sujet = document.getElementById("sujet");
+let text = document.getElementById("text");
+let regexMail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let success = document.querySelector(".success");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    let valid = true;
+    document.querySelectorAll(".error").forEach(el => el.textContent = "");
+    success.textContent = "";
+    if(nom.value === ""){
+        nom.nextElementSibling.textContent = "Le nom est obligatoire"
+        valid = false;
+    }
+    if(prenom.value === ""){
+        prenom.nextElementSibling.textContent = "Le prénom est obligatoire"
+        valid = false;
+    }
+    if(mail.value === ""){
+        mail.nextElementSibling.textContent = "Le mail est obligatoire"
+        valid = false;
+    }
+    else if(!regexMail.test(mail.value)){
+        mail.nextElementSibling.textContent = "Mail invalide"
+        valid = false;
+    }
+    if(sujet.value === "default"){
+        sujet.nextElementSibling.textContent = "Le choix du sujet est obligatoire"
+        valid = false;
+    }
+    if(text.value === ""){
+        text.nextElementSibling.textContent = "Le message est obligatoire"
+        valid = false;
+    }
+    if(valid){
+        success.textContent = "Formulaire envoyé avec succès"
+        form.reset();
+    }
+});
