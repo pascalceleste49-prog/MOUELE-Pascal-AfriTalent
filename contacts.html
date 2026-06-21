@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts - AfriTalent</title>
+    <!-- Lien google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap" rel="stylesheet">
     <!-- Icônes Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- Lien Bootstrap -->
@@ -15,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <img src="images/AfriTalent No background.png" alt="Logo AfriTalent">
+                <img src="images/AfriTalent.png" alt="Logo AfriTalent">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,24 +51,24 @@
             </div>
         </nav>
     </header>
-    <h1>CONTACTS</h1>
     <div id="top"></div>
     <section class="fade_in">
-            <div id="container_contacts">
-            <form action="" method="">
+        <div id="container_contacts">
+            <h1>CONTACTS</h1>
+            <form>
                 <div>
-                    <label for="name">Nom</label>
-                    <input type="text" class="space" id="nom">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="space" id="nom" placeholder="Votre nom...">
                     <small class="error"></small>
                 </div>
                 <div>
-                    <label for="firstname">Prénom</label>
-                    <input type="text" class="space" id="prenom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="space" id="prenom" placeholder="Votre prénom...">
                     <small class="error"></small>
                 </div>
                 <div>
                     <label for="mail">Email</label>
-                    <input type="email" class="space" id="mail">
+                    <input type="email" class="space" id="mail" placeholder="Votre email...">
                     <small class="error"></small>
                 </div>
                 <div>
@@ -80,7 +82,7 @@
                 </div>
                 <div> 
                     <label for="message">Message</label>
-                    <input type="text" id="text">
+                    <textarea name="message" id="message" cols="30" rows="10" class="space" placeholder="Votre message..."></textarea>
                     <small class="error"></small>
                 </div>
                 <div id="form_btn">

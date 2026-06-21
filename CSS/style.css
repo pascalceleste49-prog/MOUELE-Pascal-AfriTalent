@@ -64,12 +64,12 @@ a:hover{
     text-align: center;
     color: antiquewhite;
     padding-bottom: 2em;
-    height: 125vh;
+    height: auto;
     background: var(--quatrième-couleur);
 }
 #hero ul{
     display: flex;
-    gap: 25em;
+    gap: 20em;
 }
 #hero li{
     list-style: none;
@@ -123,6 +123,7 @@ button:hover{
     box-shadow: 0 10px 30px rgba(0, 0, 0);
 }
 #comment_ca_marche{
+    margin-bottom: 15em;
     margin-top: 7em;
 }
 #comment_ca_marche h2{
@@ -133,7 +134,7 @@ button:hover{
     text-align: center;
 }
 #comment_ca_marche #container{
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(4,1fr);
@@ -161,7 +162,7 @@ button:hover{
     border-color: black;
     text-align: center;
     color: black;
-    height: 70vh;
+    height: auto;
     width: 19em;
     padding-left: 2em;
     padding-right: 2em;
@@ -209,7 +210,7 @@ button:hover{
 }
 #categories_de_service .card{
     width: 12em;
-    height: 40vh;
+    height: auto;
 }
 #categories_de_service .card h3{
     margin-top: 1em;
@@ -252,7 +253,8 @@ button:hover{
     background: #31572c;
 }
 .carousel-item .card{
-    margin-left: 38%;
+    margin-left: 34%;
+    height: auto;
 }
 #temoignages h2{
     background: var(--couleur-principale);
@@ -269,7 +271,7 @@ button:hover{
 #temoignages .card{
     width: 25em;
     padding: 2em;
-    height: 70vh;
+    height: auto;
     border: solid 2px black;
     border-radius: 2em;
 }
@@ -297,6 +299,7 @@ footer a{
     font-size: larger;
 }
 #container_4{
+    margin-right: 2.5em;
     padding-top: 2em;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -308,19 +311,15 @@ footer a{
     grid-row: 1;
 }
 #col2{
-    width: 35em;
+    width: 27em;
     grid-column: 2;
     grid-row: 1;
 }
 #col3{
     text-align: center;
-    width: 25em;
+    width: 20em;
     grid-column: 3;
     grid-row: 1;
-}
-#col1, #col2, #col3{
-    background: var(--couleur-tertiaire);
-    border-radius: 3em;
 }
 #logo{
     margin-bottom: 2em;
@@ -512,7 +511,7 @@ form div{
     grid-row: 3;
 }
 #freelance_container .card-body{
-    border: solid 2px black;
+    border: solid 2px;
     border-radius: 2em;
     width: 23em;
     margin-bottom: 2em;
@@ -534,6 +533,17 @@ form div{
     padding-top: .5em;
 }
 /* CSS pour about.html */
+#title_about{
+    background: var(--couleur-tertiaire);
+    color: white;
+    font-family: var(--second-google-fonts);
+    margin-bottom: 2vh;
+    text-align: center;
+    height: 50vh;
+    padding-top: 1.5em;
+    font-weight: bold;
+    font-size: 5em;
+}
 #about section{
     margin-bottom: 5em;
 }
@@ -544,15 +554,18 @@ form div{
     font-family: var(--second-google-fonts);
 }
 #histoire{
-    margin-top: 2em;
-    padding-top: 2em;
-    height: 80vh;
+    margin-top: 0;
+    height: auto;
     background: linear-gradient(to bottom,rgba(0,0,0,0.5)), url("../images/26389178-groupe-de-affaires-gens-avoir-une-reunion-a-propos-entreprise-statistiques-photo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 #histoire p{
+    padding-bottom: 2em;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
     margin-top: 2em;
     font-family: var(--first-google-fonts);
     color: #fff;
@@ -564,7 +577,13 @@ form div{
 #about .card-body{
     border-radius: 2em;
     border: solid 2px black;
-    height: 70vh;
+    height: auto;
+}
+#about .card-body img{
+    width: 10em;
+    height: 10em;
+    border-radius: 5em;
+    text-align: center;
 }
 #about .card-body:hover{
     border: white;
@@ -581,11 +600,6 @@ form div{
 #about li{
     list-style: none;
 }
-#equipe img{
-    width: 300px;
-    height: 40vh;
-    border-radius: 10em;
-}
 #valeurs ul:last-child{
     margin-right: 2em;
 }
@@ -594,6 +608,10 @@ form div{
 }
 #valeurs i{
     font-size: 2em;
+}
+#container_chiffres_cle{
+    display: flex;
+    flex-direction: row;
 }
 /* RESPONSIVE DESIGN */
 
@@ -627,6 +645,9 @@ img{
         gap: 1em;
     }
     
+    #navMenu ul :nth-child(3){
+        margin-right: 0;
+    }
     .nav-item{
         width: auto;
         text-align: center;
@@ -1029,6 +1050,7 @@ img{
         grid-row: 1;
     }
     #col2{
+        width: 20em;
         text-align: center;
         grid-column: 1;
         grid-row: 2;
@@ -1144,15 +1166,44 @@ img{
         width: 220px;
         height: auto;
     }
+
+    /* CHIFFRES CLES */
+    #chiffres_cle h2{
+        font-size: 3em;
+    }
+    #chiffres_cle p{
+        font-size: 1.5em;
+    }
+    #chiffres_cle div{
+        margin-left: 0 !important;
+    }
+    #container_chiffres_cle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #container_chiffres_cle > div{
+        text-align: center;
+        width: 100%;
+    }
     /* CONTACTS */
     #contact h1{
-        font-size: 5em;
+        font-size: 4em;
         padding-top: 2em;
+        height: 40vh;
     }
     #container_contacts form{
-        width: 20em;
+        margin-left: 0;
+        margin-right: 0;
+        width: 25em;
+    }
+    #form_btn{
+        width: 15em;
+        margin-left: 0;
+        margin-right: 0;
     }
     iframe{
+        margin-left: 0;
         width: 35em;
     }
     
@@ -1193,12 +1244,13 @@ img{
     background: none;
     border: 2px solid white;
     border-radius: 2em;
-    height: 7vh;
+    height: 10vh;
     width: 5em;
     margin-top: 0;
     padding: 0;
     margin-left: 1em;
     margin-bottom: 0.25em;
+    text-align: center;
 }
 
 /* Dark Theme */
@@ -1208,17 +1260,29 @@ img{
 }
 .dark-theme .card {
     background: none;
-    border-color: 2px solid white;
+    border: 2px solid #fff;
 }
 .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme p, .dark-theme i{
     color: #fff;
 }
+.dark-theme #tarifs li{
+    color: #fff;     
+}
 .dark-theme #hero, .dark-theme footer{
     background: var(--couleur-secondaire);
 }
-.dark-theme #cta1, .dark-theme #col1, .dark-theme #col2, .dark-theme #col3, .dark-theme #main_card, .dark-theme button, .dark-theme #envoyer{
+.dark-theme #cta1, .dark-theme #main_card, .dark-theme button, .dark-theme #envoyer{
     background-color: rgb(0, 95, 0);
 }
+.dark-theme #container_tarifs .card li{
+    color: #fff;
+}
+.dark-theme #container_tarifs .card, .dark-theme #freelance_container .card-body, .dark-theme #temoignages .card, .dark-theme #comment_ca_marche .card, .dark-theme #categories_de_service .card, .dark-theme#about .card-body{
+    border: 2px solid #ababab; 
+}
+.dark-theme #histoire{
+    margin-top: 0;
+}          
 
 /* Light theme */
 .light #hero{
@@ -1323,7 +1387,7 @@ img{
     border-color: black;
     text-align: center;
     color: black;
-    height: 70vh;
+    height: auto;
     width: 19em;
     padding-left: 2em;
     padding-right: 2em;
@@ -1340,7 +1404,7 @@ img{
     border-radius: 2em;
     text-align: center;
     color: black;
-    height: 60vh;
+    height: auto;
     width: 19em;
 }
 .light #categories_de_service .card:hover{
@@ -1706,7 +1770,7 @@ img{
     font-family: var(--second-google-fonts);
 }
 .light #histoire{
-    margin-top: 2em;
+    margin-top: 0;
     padding-top: 2em;
     height: 80vh;
     background: linear-gradient(to bottom,rgba(0,0,0,0.5)), url("../images/26389178-groupe-de-affaires-gens-avoir-une-reunion-a-propos-entreprise-statistiques-photo.jpg");
@@ -1796,6 +1860,7 @@ img{
     z-index: 999;
     border-radius: 3em;   
 }
+/* Compteurs */
 #compteurs{
     margin-right: 3em;
 }
@@ -1813,7 +1878,7 @@ img{
 
 /* Fade-in */
 .fade_in{
-    opacity: 0;
+    opacity: 1;
     transform: translateY(50px);
     transition: all 1s ease;
 }
@@ -1824,9 +1889,12 @@ img{
 }
 
 /* Filtrage par catégories */
+/* Masquer les cartes non sélectionnées */
 #freelance.web .card, #freelance.marketing .card, #freelance.redaction .card, #freelance.cloud .card, #freelance.data_ia .card, #freelance.design .card{
     display: none;
 }
+
+/* Afficher les cartes sélectionnées */
 #freelance.web .web{
     display: block;
 }
@@ -1845,6 +1913,8 @@ img{
 #freelance.design .design{
     display: block;
 }
+
+/* Messages d'erreur et de succès */
 .error{
     color: red;
     font-size: 12px;

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriTalent</title>
     <!-- Lien google fonts -->
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap" rel="stylesheet">
     <!-- Lien CSS personnel -->
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <!-- Lien Bootstrap via CDN : Icone -->
@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <img src="images/AfriTalent No background.png" alt="Logo AfriTalent">
+                <img src="images/AfriTalent.png" alt="Logo AfriTalent">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,7 +54,7 @@
     <section id="hero" class="fade_in">
         <ul>
             <li>
-                <img src="images/AfriTalent No background.png" alt="Logo AfriTalent">
+                <img src="images/AfriTalent.png" alt="Logo AfriTalent">
             </li>
             <li>
                 <div class="card" id="main_card">
@@ -129,7 +129,7 @@
         <div id="container_2">
             <div class="card col-12 col-md-6 col-lg-4" id="div1">
                 <i class="bi bi-globe2"></i>
-                <h3>Développemnt Web</h3>
+                <h3>Développement Web</h3>
                 <p>20.000 freelances disponibles</p>
             </div>        
             <div class="card col-12 col-md-6 col-lg-4" id="div2">
@@ -244,22 +244,24 @@
              </div>
              <!-- Contrôles précédent/suivant -->
              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" id="prev">
-                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                 <span class="visually-hidden">Précédent</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" id="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">suivant</span>
-                </button>
-            </div>
-        </section>
-        <section id="cta">
-            <button>S'inscrire</button>
-        </section>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" id="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">suivant</span>
+            </button>
+        </div>
+    </section>
+
+    <div id="cta">
+        <button>S'inscrire</button>
+    </div>
+
     <footer>
         <div id="container_4">
             <div id="col1">
-                <img src="images/AfriTalent No background.png" alt="Logo de AfriTalent" id="logo">
+                <img src="images/AfriTalent.png" alt="Logo de AfriTalent" id="logo">
                 <p>AfriTalent est une plateforme permettant à de nombreux freelances et aux entreprises d'être en contact afin de travailler sur un projet. Les entreprises recrutent les freelances et les freelances travaillent pour ces entreprises là. Aujourd'hui, AfriTalent est devenu la référence pour tous freelances souhaitent se développer et pour toutes entreprises souhaitant recruter un freelance.</p>
             </div>
             <div id="col2">
@@ -304,10 +306,10 @@
         </div>
     </footer>
     
-    <!-- Bootstrap 5 via CDN: script JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <div id="top"></div>
+    <!-- Bootstrap 5 via CDN: script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script JS -->
     <script src="JS/main.js"></script>
 </body>
