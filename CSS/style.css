@@ -353,6 +353,10 @@ footer li{
     font-weight: bold;
     font-size: 5em;
 }
+#contact h2{
+    margin-top: 2em;
+    font-family: var(--second-google-fonts);
+}
 #container_contacts form{
     margin-top: 2em;
     text-align: center;
@@ -547,7 +551,7 @@ form div{
 #about section{
     margin-bottom: 5em;
 }
-#about h1{
+#about h2{
     color: #fff;
     text-align: center;
     background: var(--couleur-tertiaire);
@@ -612,6 +616,10 @@ form div{
 #container_chiffres_cle{
     display: flex;
     flex-direction: row;
+}
+#chiffres_cle h3{
+    font-size: 5em;
+    text-align: center;
 }
 /* RESPONSIVE DESIGN */
 
